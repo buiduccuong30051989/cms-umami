@@ -37,10 +37,12 @@
     "htmlhint-stylish": "^1.0.3",
     "install": "^0.8.1",
     "jquery": "2.2.1",
+    "jquery.nicescroll": "^3.6.8",
     "jshint": "^2.9.2",
     "npm": "^3.10.6",
     "pug": "^2.0.0-beta6",
-    "run-sequence": "^1.2.2"
+    "run-sequence": "^1.2.2",
+    "select2": "^4.0.3"
   },
   "dependencies": {
     "gulp-filelist": "^0.5.0"

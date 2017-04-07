@@ -1,40 +1,23 @@
-.relative{
-   position:relative;
-}
-.container{
-   .sm{
-      max-width: 960px;
-   }
-}
-
-/*=============================
-=            Space            =
-=============================*/
-   .mgb-md-30{
-      margin-bottom: 30px;
+   .relative{
+      position:relative;
    }
 
-
-/*=====  End of Space  ======*/
-
-/*==================================
-=            Background            =
-==================================*/
+/*----------  Background  ----------*/
+   .bg-main{
+      background: $main-color;
+   }
    .bg-grey{
-      background: #ccc;
+      background: #EDF0F0;
    }
 
-
-/*=====  End of Background  ======*/
-
-/*============================
-=            Typo            =
-============================*/
    .nowarp{
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
    }
 
-
-/*=====  End of Typo  ======*/
+/*----------  Min with show scroll   ----------*/
+   .min-w-360{
+      min-width: 420px;
+      overflow:auto;
+   }

@@ -12,15 +12,18 @@
 @import 'bootstrap';
 @import 'font-awesome';
 @import 'daterangepicker.scss';
+@import 'select2.min';
 
 @import 'vendors/bootstrap-override-variable';
 
-@import 'components/feature-row';
 @import 'components/form';
-@import 'components/card';
-@import 'components/step-book';
-@import 'components/description';
-@import 'components/reservation-box';
+@import 'components/heading';
+@import 'components/panel';
+@import 'components/tabs';
 
 @import 'layout/header';
 @import 'layout/footer';
+@import 'layout/sidebar';
+@import 'layout/content';
+
+@import 'page/blank';

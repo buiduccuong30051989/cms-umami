@@ -1,3 +1,27 @@
-body{
-  font-family: $bodyfont;
-}
+/*----------  Reset  ----------*/
+
+   body{
+     font-family: $bodyfont;
+     width:100%;
+     min-height: 100vh;
+     overflow-x:hidden;
+     color: #797979;
+   }
+   input, textarea, select, button {
+       outline: none !important;
+   }
+   h1,h2,h3,h4,h5,h6{
+   }
+   h1{
+
+   }
+   h2{
+
+   }
+   h3{
+      font-size: 24px;
+   }
+   select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+   }

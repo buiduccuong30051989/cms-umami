@@ -1,5 +1,16 @@
 include modules/head/head
 doctype html
 html
-  +head
-  body
+   +head
+   body.bg-main
+      form.login
+         .panel
+            .panel-heading
+               .logo
+                  img(src='http://placehold.it/300x60')
+            .panel-body
+               .form-group.form-group-lg
+                  input#username.form-control(type='text', placeholder='Username')
+               .form-group.form-group-lg
+                  input#password.form-control(type='password', placeholder='Password')
+               button.btn.btn-default.btn-lg.btn-block(type='submit') Submit 

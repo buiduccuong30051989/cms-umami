@@ -78,7 +78,8 @@ var scss = {
     includePaths: [
       './node_modules/bootstrap-sass/assets/stylesheets',
       './node_modules/font-awesome/scss/',
-      './node_modules/daterangepicker'
+      './node_modules/daterangepicker',
+      './node_modules/select2/dist/css'
     ]
   }
 };
@@ -100,7 +101,9 @@ var js = {
     source + 'js/*.*',
     './node_modules/daterangepicker/moment.min.js',
     './node_modules/daterangepicker/daterangepicker.js',
-    './node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js'
+    './node_modules/jquery.nicescroll/jquery.nicescroll.min.js',
+    './node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js',
+    './node_modules/select2/dist/js/select2.full.min.js'
   ],
   out: dest + 'js/'
 };

@@ -1,0 +1,38 @@
+mixin header
+   header.top-head.container-fluid
+      button.navbar-toggle.pull-left(type='button')
+         span.sr-only Toggle navigation
+         span.icon-bar
+         span.icon-bar
+         span.icon-bar
+      nav.navbar-default(role='navigation')
+         ul.list-inline.top-menu.top-right-menu
+            li.dropdown
+               a.dropdown-toggle(data-toggle='dropdown', href='#', aria-expanded='false')
+                  | English 
+                  span.caret
+               ul.dropdown-menu(role='menu')
+                  li
+                     a(href='#') German
+                  li
+                     a(href='#') French
+                  li
+                     a(href='#') Italian
+                  li
+                     a(href='#') Spanish
+            // user login dropdown start
+            li.dropdown.text-center
+               a.dropdown-toggle(data-toggle='dropdown', href='#', aria-expanded='false')
+                  img.img-circle.profile-img.thumb-sm(alt='', src='http://placehold.it/40x40')
+                  span.username UserName 
+                  span.caret
+               ul.dropdown-menu.extended.pro-menu(tabindex='5003', style='overflow: hidden; outline: none;')
+                  li
+                     a(href='profile.html')
+                        i.fa.fa-briefcase
+                        | Profile
+                  li
+                     a(href='#')
+                        i.fa.fa-sign-out
+                        |  Log Out
+            // user login dropdown end

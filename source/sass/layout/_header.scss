@@ -1,13 +1,63 @@
-.header{
-   .header-inner{
-      .logo{
-         float:left;
+header.top-head.container-fluid{
+   .navbar-toggle {
+      margin: 8px 20px 8px 0px;
+      display: block;
+      padding-left: 0px;
+      position: relative;
+      float: right;
+      padding: 9px 10px;
+      margin-top: 8px;
+      margin-right: 15px;
+      margin-bottom: 8px;
+      background-color: transparent;
+      background-image: none;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      .icon-bar {
+         display: block;
+         width: 22px;
+         height: 2px;
+         border-radius: 1px;
+         background-color: #b3b3be;
       }
-      .control{
-         .group-btn,.group-dropdown{
-            float:right;
-            .dropdown{
-               float:right;
+   }
+   nav{
+      ul.list-inline{
+         float: right;
+         margin:0;
+         & > li {
+            height: 100%;
+            display: inline-block;
+            position: relative;
+            float: left;
+            line-height: 50px;
+            padding: 0px;
+            position: relative;
+            &>a{
+               color: #777;
+               padding: 10px 15px;
+               line-height: 20px;
+               &:hover,&:focus {
+                  text-decoration: none;
+               }
+            }
+             ul.dropdown-menu.extended{
+               padding: 0;
+               li {
+                  border-bottom: 1px solid #f0f0f0;
+                  line-height: 20px;
+                  a{
+                     color: #979898;
+                     padding:10px 20px;
+                     i {
+                        float: left;
+                        width: 38px;
+                        margin-right: 10px;
+                        text-align: center;
+                        margin-top: 5px;
+                     }
+                  }
+               }
             }
          }
       }

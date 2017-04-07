@@ -1,147 +1,147 @@
-.popup-suggest-search{
-   height: 0;
-   overflow: hidden;
-   position: absolute;
-   top:100%;
-   left:0;
-   margin-left: 15px;
-   padding:15px;
-   opacity: 0;
-   background: #fff;
-   border:1px solid #000;
-   top:40px;
-}
-.input-search-suggest:focus + .popup-suggest-search{
-   transition:opacity .2s;
-   opacity: 1;
-   z-index: 99;
-   height: auto;
-}
-.form-yokoso{
-   display: inline-block;
-   width:100%;
-}
-
-.js-dropdown-modify-room{
-   width:100%;
-   padding:15px;
-}
-
-.participants-form-outer{
-   .participants-form-inner{
-      label{
-         display: none;
-      }
-   }
-   .participants-form-inner:nth-of-type(1){
-      label{
-         display: block;
-      }
-   }
-   @include respond-to('small-tablet') {
-      .participants-form-inner:nth-of-type(1){
-         label{
-            display: none;
-         }
-      }
-   }
-}
-.participants-form-inner{
-   margin-bottom: 15px;
-   display: inline-block;
-   width:100%;
-   .lg{
-      width:23%;
-      float:left;
-      padding-right:1%;
-   }
-   .md{
-      width:20%;
-      float:left;
-   }
-   .sm{
-      width:17%;
-      float:left;
-      padding-right: 1%;
-   }
-   @include respond-to('small-tablet') {
-      .lg,.md,.sm{
-         width:50%;
-         margin-bottom: 10px;
-      }
-      .md,.sm{
-         width:33%;
-         margin-bottom: 10px;
-      }
-   }
-   @include respond-to('medium-mobile') {
-      .lg,.md,.sm{
+/*============================
+=            Form            =
+============================*/
+   
+   /*----------  Form Login  ----------*/
+      form.login{
          width:100%;
-      }
-   }
-   &.modify{
-      padding-right: 44px;
-      position: relative;
-      .xs{
-         position: absolute;
-         right:0;
-         top:0;
-      }
-      @include respond-to('medium-mobile') {
-         .xs{
-            position: static;
-            width:100%;
-            button{
-               width:100%;
+         max-width: 430px;
+         padding:15px;
+         margin: 140px auto 140px;
+         .panel{
+            padding:30px 0;
+            .panel-heading{
+               .logo{
+                  img{
+                     display: block;
+                     margin:0 auto;
+                     max-width: 100%;
+                  }
+               }
             }
          }
       }
-      &:first-child{
-         .xs{
-            top:25px;
+
+   /*----------  Form Feed Back  ----------*/
+      .feedback-left,.feedback-right{
+         position: relative;
+      }
+      .feedback-left .form-control, .feedback-left .form-control:focus {
+         font-size: 13px;
+         color: #444444;
+         padding-left: 40px;
+         box-shadow: none;
+      }
+      .feedback-left.search::before {
+         content: "\f002";
+         position: absolute;
+         left: 12px;
+         font-family: FontAwesome;
+         cursor: pointer;
+         top: 7px;
+         color: #c4c4cd;
+         display: inline-block;
+      }
+      .feedback-right .form-control, .feedback-right .form-control:focus {
+         font-size: 13px;
+         color: #444444;
+         padding-right: 40px;
+         box-shadow: none;
+      }
+      .feedback-right.select::before {
+         background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc);
+         background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+         background-size: 5px 5px, 5px 5px, 1px 1.5em;
+         background-repeat: no-repeat;
+      }
+
+   /*----------  Override Select 2  ----------*/
+      .select2{
+         width:100%;
+         max-width: 100%;
+      }
+      .select2-container--theme{
+         .select2-selection{
+         font-size: 13px;
+         color: #444444;
+         padding-left: 40px;
+         box-shadow: none;
+         height: 34px;
+         padding: 6px 12px;
+         line-height: 1.42857;
+         background-color: #fff;
+         background-image: none;
+         border: 1px solid #ccc;
+         border-radius: 4px;
+         transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+            .select2-selection__arrow{
+               height: 34px;
+               position: absolute;
+               top: 0;
+               right: 1px;
+               width: 28px;
+               border-left: 1px solid #ccc;
+               b {
+                   border-color: #888 transparent transparent transparent;
+                   border-style: solid;
+                   border-width: 5px 4px 0 4px;
+                   height: 0;
+                   left: 50%;
+                   margin-left: -4px;
+                   margin-top: -2px;
+                   position: absolute;
+                   top: 50%;
+                   width: 0;
+               }
+            }
+         }
+         .select2-dropdown--below{
+            border:1px solid #ccc;
+            border-top:0;  
+            .select2-results__option--highlighted{
+               background: $main-color;
+               color:#fff;
+            }       
+            .select2-results__option[aria-selected="true"]{
+               background: #ddd;
+               &:hover{
+                  background: $main-color;
+                  color:#fff;
+               }
+            }
          }
       }
-   }
-}
 
-.form-credit-card-sigup{
-   display: inline-block;
-   width: 100%;
-   label{
-      display: block;
-   }
-   select{
-      width: 60px;
-      display: inline-block;
-      margin-right: 15px;
-      padding-left: 5px;
-   }
-   select.form-control:nth-of-type(2){
-      margin-left: 15px;
-   }
-   span{
-      font-size: 20px;
-      display: inline-block;
-      vertical-align: middle;
-   }
-   .lg{
-      max-width: 310px;
-      width:100%;
-      float:left;
-      clear:both;
-   }
-   .md{
-      width:185px;
-      clear:both;
-      float:left;
-   }
-   .sm{
-      float:left;
-      width: 64px;
-   }
-}
+   /*----------  Size  ----------*/
+      input.sm{
+         width:60px;
+      }
+      input.inline{
+         display: inline-block;
+         float:left;
+      }
 
-/* Form sing up / sign in */
-.modal-footer.text-center{
-   text-align: center;
-}
+   /*---------- Form Style  ----------*/
+      .group-style-1{
+         line-height: 34px;
+         input{
+            margin-right: 15px;
+         }
+         span{
+            margin-right: 15px;
+         }
+         a{
+            display: inline-block;
+            width:34px;
+            height: 34px;
+            background: #D8D8D8;
+            color:#666;
+            text-align: center;
+            line-height: inherit;
+            border-radius: 4px;
+            i{
+               font-size: 18px;
+            }
+         }
+      }
+/*=====  End of Form  ======*/
