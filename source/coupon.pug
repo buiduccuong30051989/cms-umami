@@ -1,0 +1,66 @@
+include modules/head/head
+include modules/sidebar/sidebar
+include modules/header/header
+doctype html
+html
+   +head
+   body
+   +sidebar('coupon')
+   //Main Content Start 
+   section.content
+      +header
+      .wraper.container-fluid
+         .row
+            .col-sm-12
+               .panel.panel-default
+                  form.form-inline.top-form.coupon
+                     .form-group.feedback-left.search
+                        input.form-control(placeholder='クーポンID, クーポン名,', type='text')
+                     .form-group.feedback-right.calendar
+                        input.form-control#daterange(type='text')(name='daterange')(value='')
+                     .form-group
+                        select.form-control.select2
+                           option 登録状況
+                           option 登録状況
+                           option 登録状況
+                     a(href='coupon-register.html').btn.btn-primary(type='button') 新規
+         .row
+            .col-sm-12
+               .panel.panel-default
+                  .table-responsive
+                     table.table.table-hover.reservation
+                        thead
+                           tr
+                              th クーポンID
+                              th 訪日旅行社
+                              th 有効期間
+                              th 値引率/額
+                              th 申請者
+                              th 登録状況
+                        tbody
+                           tr
+                              td 19411
+                              td 
+                                 a(href='coupon-approver.html') ウラジミール・プーチン
+                              td 2017/4/1-2017/4/30
+                              td 10%
+                              td 割引太郎
+                              td 承認済
+                           
+            .col-sm-12.text-center
+               ul.pagination
+                  li
+                     a(href='#') «
+                  li
+                     a(href='#') 1
+                  li
+                     a(href='#') 2
+                  li
+                     a(href='#') 3
+                  li
+                     a(href='#') 4
+                  li
+                     a(href='#') 5
+                  li
+                     a(href='#') »
+   // Main Content Ends 

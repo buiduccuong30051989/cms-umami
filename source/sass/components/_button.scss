@@ -1,0 +1,167 @@
+/*----------  Button  ----------*/
+  button.btn-primary{
+    background-color:#4E91DF;
+  }
+  button.btn-danger{
+    background-color:#FC0019;
+  }
+   .nav-pills > li > a{
+      padding:0 40px;
+      font-size: 16px;
+      line-height: 40px;
+      background: #fff;
+      margin-right: 15px;
+      transition:$fast;
+      &:hover{
+         background-color: #4E91DF;
+         color:#fff;
+      }
+   }
+   .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus{
+      padding:0 40px;
+      font-size: 16px;
+      line-height: 40px;
+   }
+   .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus{
+      background-color: #4E91DF;
+   }
+
+   /* Toggle Switch */
+      .btn-toggle {
+        margin: 0 4rem;
+        padding: 0;
+        position: relative;
+        border: none;
+        height: 1.5rem;
+        width: 3rem;
+        border-radius: 1.5rem;
+        color: #6b7381;
+        background: #bdc1c8;
+      }
+      .btn-toggle:focus,
+      .btn-toggle.focus,
+      .btn-toggle:focus.active,
+      .btn-toggle.focus.active {
+        outline: none;
+      }
+      
+      .btn-toggle > .handle {
+        position: absolute;
+        top: 0.1875rem;
+        left: 0.1875rem;
+        width: 1.125rem;
+        height: 1.125rem;
+        border-radius: 1.125rem;
+        background: #fff;
+        transition: left .25s;
+      }
+      .btn-toggle.active {
+        transition: background-color 0.25s;
+      }
+      .btn-toggle.active > .handle {
+        left: 1.6875rem;
+        transition: left .25s;
+      }
+     
+      .btn-toggle.active {
+        background-color: #4E91DF;
+      }
+      .btn-toggle.btn-lg {
+        margin: 0 5rem;
+        padding: 0;
+        position: relative;
+        border: none;
+        height: 2.5rem;
+        width: 5rem;
+        border-radius: 2.5rem;
+      }
+      .btn-toggle.btn-lg:focus,
+      .btn-toggle.btn-lg.focus,
+      .btn-toggle.btn-lg:focus.active,
+      .btn-toggle.btn-lg.focus.active {
+        outline: none;
+      }
+     
+      .btn-toggle.btn-lg > .handle {
+        position: absolute;
+        top: 0.3125rem;
+        left: 0.3125rem;
+        width: 1.875rem;
+        height: 1.875rem;
+        border-radius: 1.875rem;
+        background: #fff;
+        transition: left .25s;
+      }
+      .btn-toggle.btn-lg.active {
+        transition: background-color 0.25s;
+      }
+      .btn-toggle.btn-lg.active > .handle {
+        left: 2.8125rem;
+        transition: left .25s;
+      }
+      .btn-toggle.btn-sm {
+        margin: 0 0.5rem;
+        padding: 0;
+        position: relative;
+        border: none;
+        height: 1.5rem;
+        width: 3rem;
+        border-radius: 1.5rem;
+      }
+      .btn-toggle.btn-sm:focus,
+      .btn-toggle.btn-sm.focus,
+      .btn-toggle.btn-sm:focus.active,
+      .btn-toggle.btn-sm.focus.active {
+        outline: none;
+      }
+      .btn-toggle.btn-sm > .handle {
+        position: absolute;
+        top: 0.1875rem;
+        left: 0.1875rem;
+        width: 1.125rem;
+        height: 1.125rem;
+        border-radius: 1.125rem;
+        background: #fff;
+        transition: left .25s;
+      }
+      .btn-toggle.btn-sm.active {
+        transition: background-color 0.25s;
+      }
+      .btn-toggle.btn-sm.active > .handle {
+        left: 1.6875rem;
+        transition: left .25s;
+      }
+      .btn-toggle.btn-xs {
+        margin: 0 0;
+        padding: 0;
+        position: relative;
+        border: none;
+        height: 1rem;
+        width: 2rem;
+        border-radius: 1rem;
+      }
+      .btn-toggle.btn-xs:focus,
+      .btn-toggle.btn-xs.focus,
+      .btn-toggle.btn-xs:focus.active,
+      .btn-toggle.btn-xs.focus.active {
+        outline: none;
+      }
+    
+      .btn-toggle.btn-xs > .handle {
+        position: absolute;
+        top: 0.125rem;
+        left: 0.125rem;
+        width: 0.75rem;
+        height: 0.75rem;
+        border-radius: 0.75rem;
+        background: #fff;
+        transition: left .25s;
+      }
+      .btn-toggle.btn-xs.active {
+        transition: background-color 0.25s;
+      }
+      .btn-toggle.btn-xs.active > .handle {
+        left: 1.125rem;
+        transition: left .25s;
+      }
+      

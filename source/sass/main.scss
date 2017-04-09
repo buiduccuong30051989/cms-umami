@@ -20,6 +20,9 @@
 @import 'components/heading';
 @import 'components/panel';
 @import 'components/tabs';
+@import 'components/table';
+@import 'components/button';
+@import 'components/sortable';
 
 @import 'layout/header';
 @import 'layout/footer';
@@ -27,3 +30,5 @@
 @import 'layout/content';
 
 @import 'page/blank';
+@import 'page/client';
+@import 'page/agent';

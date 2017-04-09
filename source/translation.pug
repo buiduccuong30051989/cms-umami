@@ -1,0 +1,73 @@
+include modules/head/head
+include modules/sidebar/sidebar
+include modules/header/header
+doctype html
+html
+   +head
+   body.bg-grey
+   +sidebar('translation')
+   //Main Content Start 
+   section.content
+      +header
+      .wraper.container-fluid
+         
+         ul.nav.nav-pills.tab-head
+            li.active
+               a(data-toggle='pill')(href='#translation-tour') ツアー
+            li
+               a(data-toggle='pill')(href='#translation-fixed-phrase') 定型文
+            li
+               a(data-toggle='pill')(href='#translation-email') メール雛形
+         .tab-content
+            #translation-tour.tab-pane.fade.in.active
+               .panel.panel-default
+                  form.form-inline.top-form.translation
+                     .form-group.feedback-left.search
+                        input.form-control(placeholder='Tour No. Tour name, 翻訳者名', type='text')
+                     .form-group
+                        select.form-control.select2
+                           option 対象言語
+                           option 対象言語
+                           option 対象言語
+                     .form-group
+                        select.form-control.select2
+                           option 未完, 作業中
+                           option 未完, 作業中
+                           option 未完, 作業中
+               .panel.panel-default
+                  .table-responsive
+                     table.table.table-hover.course
+                        thead
+                           tr
+                              th
+                              th コースNO
+                              th ツアー名
+                              th 対象言語
+                              th ステータス
+                              th 翻訳者
+                        tbody
+                           tr
+                              td 
+                                 img(src='http://placehold.it/65x50', alt='course-thumbnail')
+                              td K1108
+                              td 
+                                 a(href='translation-register.html') Private Chartered Plan / Standard Course: 10-Hour Sightseeing…
+                              td 英語
+                              td 未完
+                              td 
+                                 a(href='') 毛沢東
+                           tr
+                              td 
+                                 img(src='http://placehold.it/65x50', alt='course-thumbnail')
+                              td K1108
+                              td 
+                                 a(href='client-detail.html') Private Chartered Plan / Standard Course: 10-Hour Sightseeing…
+                              td 英語
+                              td 未完
+                              td 
+                                 a(href='') 毛沢東
+            #translation-fixed-phrase.tab-pane.panel.panel-default.fade
+               h3 Coming Soon
+            #translation-email.tab-pane.panel.panel-default.fade
+               h3 Coming Soon
+   // Main Content Ends 

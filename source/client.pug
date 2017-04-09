@@ -1,0 +1,78 @@
+include modules/head/head
+include modules/sidebar/sidebar
+include modules/header/header
+doctype html
+html
+   +head
+   body.bg-grey
+   +sidebar('client')
+   //Main Content Start 
+   section.content
+      +header
+      .wraper.container-fluid
+         .row
+            .col-sm-12
+               .panel.panel-default
+                  form.form-inline.top-form.client
+                     .form-group.feedback-left.search
+                        input.form-control(placeholder='Customer name, email address', type='text')
+                     .form-group
+                        select.form-control.select2
+                           option Country
+                           option Country
+                           option Country
+                     .form-group
+                        select.form-control.select2
+                           option Language
+                           option Language
+                           option Language
+                     .form-group.feedback-right.calendar
+                        input.form-control#daterange(type='text')(name='daterange')(value='')
+                     .form-group
+                        button.download-client
+                           i.fa.fa-cloud-download(aria-hidden='true')
+                  .checkbox.yokosho
+                        label
+                           input(type='checkbox')
+                           i.fa
+                           | Unchecked
+         .row           
+            .col-sm-12
+               .panel.panel-default
+                  .table-responsive
+                     table.table.table-hover.course
+                        thead
+                           tr
+                              th
+                              th 顧客ID
+                              th 顧客名
+                              th 言語
+                              th 国籍
+                              th 最終ログイン
+                        tbody
+                           tr
+                              td 
+                                 img(src='http://placehold.it/65x50', alt='course-thumbnail')
+                              td 10001
+                              td 
+                                 a(href='client-detail.html') Ray Brown
+                              td English
+                              td US
+                              td 2017/04/04 18:35
+            .col-sm-12.text-center
+               ul.pagination
+                  li
+                     a(href='#') «
+                  li
+                     a(href='#') 1
+                  li
+                     a(href='#') 2
+                  li
+                     a(href='#') 3
+                  li
+                     a(href='#') 4
+                  li
+                     a(href='#') 5
+                  li
+                     a(href='#') »
+   // Main Content Ends 

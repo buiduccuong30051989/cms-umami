@@ -1,0 +1,93 @@
+include modules/head/head
+include modules/sidebar/sidebar
+include modules/header/header
+doctype html
+html
+   +head
+   body
+   +sidebar('fixed-phrase')
+   //Main Content Start 
+   section.content
+      +header
+      .wraper.container-fluid
+         .page-title
+            h3.title エージェントグループ一覧
+         .row
+            .col-sm-12
+               .panel.panel-default
+                  form.form-inline.top-form.fixed-pharase
+                     .form-group.feedback-left.search
+                        input.form-control(placeholder='定型文名, キーワード', type='text')
+                     .form-group
+                        select.form-control.select2
+                           option カテゴリ
+                           option カテゴリ
+                           option カテゴリ
+                     .form-group
+                        select.form-control.select2
+                           option update
+                           option カテゴリ
+                           option カテゴリ
+                     .form-group
+                        select.form-control.select2
+                           option update
+                           option カテゴリ
+                           option カテゴリ
+                     a(href='coupon-register.html').btn.btn-primary(type='button') 新規
+            .col-sm-12
+               .panel.panel-default
+                  .row
+                     table.table.sorted_table
+                        thead
+                           tr
+                              th カテゴリ
+                              th 定型文名
+                        tbody
+                           tr
+                              td 宿泊あり
+                              td 
+                                 a(href='template-detail.html') 定型文１
+                                 i.fa.fa-bars(aria-hidden='true')
+                           tr
+                              td 宿泊あり
+                              td 
+                                 a(href='template-detail.html') 定型文１
+                                 i.fa.fa-bars(aria-hidden='true')
+                           tr
+                              td 宿泊あり
+                              td 
+                                 a(href='template-detail.html') 定型文１
+                                 i.fa.fa-bars(aria-hidden='true')
+                           tr
+                              td 宿泊あり
+                              td 
+                                 a(href='template-detail.html') 定型文１
+                                 i.fa.fa-bars(aria-hidden='true')
+                           tr
+                              td 宿泊あり
+                              td 
+                                 a(href='template-detail.html') 定型文１
+                                 i.fa.fa-bars(aria-hidden='true')
+                           tr
+                              td 宿泊あり
+                              td 
+                                 a(href='template-detail.html') 定型文１
+                                 i.fa.fa-bars(aria-hidden='true')
+
+            .col-sm-12.text-center
+               ul.pagination
+                  li
+                     a(href='#') «
+                  li
+                     a(href='#') 1
+                  li
+                     a(href='#') 2
+                  li
+                     a(href='#') 3
+                  li
+                     a(href='#') 4
+                  li
+                     a(href='#') 5
+                  li
+                     a(href='#') »
+   // Main Content Ends 

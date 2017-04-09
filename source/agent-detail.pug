@@ -1,0 +1,205 @@
+include modules/head/head
+include modules/sidebar/sidebar
+include modules/header/header
+doctype html
+html
+   +head
+   body.bg-grey
+   +sidebar('agent')
+   //Main Content Start 
+   section.content
+      +header
+      .wraper.container-fluid
+         .page-title
+            a(href='agent.html')
+               h3 
+                  i.fa.fa-angle-left(aria-hidden='true')
+                  | グループ一覧
+         ul.nav.nav-pills.tab-head
+            li.active
+               a(data-toggle='pill', href='#agent-group') グループ
+            li
+               a(data-toggle='pill', href='#agent-organization') 組織
+            li
+               a(data-toggle='pill', href='#agent-billing-history') 請求履歴
+         .tab-content
+            #agent-group.tab-pane.fade.in.active
+               .panel.panel-default
+                  h3.sub-title グループ情報
+                  dl.dl-horizontal.desc
+                     dt.text-right 会社名
+                     dd.text-left 訪日旅行社
+                     dt.text-right 郵便番号
+                     dd.text-left 160-0062
+                     dt.text-right 住所 1
+                     dd.text-left 東京都新宿区西新宿５-１-３
+                     dt.text-right 住所 
+                     dd.text-left 2 ハイブリッヂ４B
+                     dt.text-right 担当者名 
+                     dd.text-left 訪日太郎
+                     dt.text-right Eメール 
+                     dd.text-left taro@agency.com
+                     dt.text-right TEL 
+                     dd.text-left 03-1111-1111
+               .panel.panel-default
+                  h3.sub-title 販売設定
+                  .row
+                     .dl-fake
+                        .table-responsive
+                           table.table.no-border.agent-sales-setting#js-agent-sales-setting
+                              thead
+                                 tr
+                                    th 販売カテゴリ
+                                    th 手数料率
+                              tbody
+                                 tr
+                                    td
+                                       select.form-control.select2
+                                          option バスツアー
+                                          option バスツアー
+                                          option バスツアー
+                                    td
+                                       .form-group
+                                          input.form-control.sm.inline(type='text')
+                                          span %
+                                          a.btn-trash(href='#')
+                                             i.fa.fa-trash(aria-hidden='true')
+                                 tr
+                                    td
+                                       select.form-control.select2
+                                          option バスツアー
+                                          option バスツアー
+                                          option バスツアー
+                                    td
+                                       .form-group
+                                          input.form-control.sm.inline(type='text')
+                                          span %
+                                          a.btn-trash(href='#')
+                                             i.fa.fa-trash(aria-hidden='true')
+                                 tr.add-control
+                                    td
+                                    td
+                                       .form-group
+                                          a.btn-trash.pull-right#js-add-sales-setting(href='#')
+                                             i.fa.fa-plus(aria-hidden='true')              
+               .col-sm-12.text-center
+                  .group-btn-footer.agent
+                     button.btn.btn-danger.btn-lg(type='button') 削除
+                     button.btn.btn-primary.btn-lg(type='button') 保存
+            #agent-organization.tab-pane.fade
+               .panel.panel-default
+                  h3.sub-title 組織情報
+                  dl.dl-horizontal.desc
+                     dt.text-right 会社名
+                     dd.text-left 訪日旅行社
+                     dt.text-right 郵便番号
+                     dd.text-left 160-0062
+                     dt.text-right 住所 1
+                     dd.text-left 東京都新宿区西新宿５-１-３
+                     dt.text-right 住所 
+                     dd.text-left 2 ハイブリッヂ４B
+                     dt.text-right 担当者名 
+                     dd.text-left 訪日太郎
+                     dt.text-right Eメール 
+                     dd.text-left taro@agency.com
+                     dt.text-right TEL 
+                     dd.text-left 03-1111-1111
+               .panel.panel-default
+                  h3.sub-title 請求情報
+                  dl.dl-horizontal.desc
+                     dt.text-right 会社名 
+                     dd.text-left 訪日旅行社
+                     dt.text-right 郵便番号 
+                     dd.text-left 160-0062
+                     dt.text-right 住所 
+                     dd.text-left 1 東京都新宿区西新宿５-１-３
+                     dt.text-right 住所 
+                     dd.text-left 2 ハイブリッヂ４B
+                     dt.text-right 担当者名 
+                     dd.text-left 訪日太郎
+                     dt.text-right Eメール
+                     dd.text-left taro@agency.com
+                     dt.text-right TEL 
+                     dd.text-left 03-1111-1111
+               .panel.panel-default
+                  h3.sub-title 販売設定
+                  .row
+                     .dl-fake
+                        .table-responsive
+                           table.table.no-border.agent-sales-setting#js-agent-sales-setting
+                              thead
+                                 tr
+                                    th 販売カテゴリ
+                                    th 手数料率
+                              tbody
+                                 tr
+                                    td
+                                       select.form-control.select2
+                                          option バスツアー
+                                          option バスツアー
+                                          option バスツアー
+                                    td
+                                       .form-group
+                                          input.form-control.sm.inline(type='text')
+                                          span %
+                                          a.btn-trash(href='#')
+                                             i.fa.fa-trash(aria-hidden='true')
+                                 tr
+                                    td
+                                       select.form-control.select2
+                                          option バスツアー
+                                          option バスツアー
+                                          option バスツアー
+                                    td
+                                       .form-group
+                                          input.form-control.sm.inline(type='text')
+                                          span %
+                                          a.btn-trash(href='#')
+                                             i.fa.fa-trash(aria-hidden='true')
+                                 tr.add-control
+                                    td
+                                    td
+                                       .form-group
+                                          a.btn-trash.pull-right#js-add-sales-setting(href='#')
+                                             i.fa.fa-plus(aria-hidden='true')              
+               .panel.panel-default
+                  h3.sub-title 請求設定
+                  dl.dl-horizontal.desc.billing-preferences
+                     dt 請求先に設定する
+                     dd 
+                        .checkbox.yokosho
+                           label
+                              input(type='checkbox')
+                              i.fa
+                     dt 請求タイプ
+                     dd 
+                        .form-group
+                           select.form-control.select2
+                              option 請求書
+                              option 請求書
+                              option 請求書
+                     dt 支払サイト
+                     dd 
+                        .form-group
+                           select.form-control.select2
+                              option EOM25
+                              option EOM25
+                              option EOM25
+               .panel.panel-default
+                  h3.sub-title クレジットカード
+                  .client-credit-information
+                     p.client-credit-number
+                        i.fa.fa-cc-visa(aria-hidden='true')
+                        span &#11044;&#11044;&#11044;&#11044; 1234
+                     p.client-credit KAZUHISA TAKAHASHI
+                     p.client-credit-expires 03/2022
+                  hr
+               .col-sm-12.text-center
+                  .group-btn-footer.agent
+                     button.btn.btn-danger.btn-lg(type='button') 削除
+                     button.btn.btn-primary.btn-lg(type='button') 保存
+            #agent-billing-history.tab-pane.panel.panel-default.fade
+               h3 Menu 2
+               p
+                  | Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+   // Main Content Ends 

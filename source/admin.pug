@@ -1,0 +1,81 @@
+include modules/head/head
+include modules/sidebar/sidebar
+include modules/header/header
+doctype html
+html
+   +head
+   body
+   +sidebar('admin')
+   //Main Content Start 
+   section.content
+      +header
+      .wraper.container-fluid
+         .page-title
+            h3.title エージェントグループ一覧
+         .row
+            .col-sm-12
+               .panel.panel-default
+                  form.form-inline.top-form.admin
+                     .form-group.feedback-left.search
+                        input.form-control(placeholder='ユーザーID, 会社コード, ユーザー名', type='text')
+                     .form-group
+                        select.form-control.select2
+                           option 社内・外
+                           option 社内・外
+                           option 社内・外
+                     .form-group
+                        select.form-control.select2
+                           option 権限区分
+                           option 権限区分
+                           option 権限区分
+                     .form-group
+                        select.form-control.select2
+                           option アカウントロック
+                           option アカウントロック
+                           option アカウントロック
+            .col-sm-12
+               .panel.panel-default
+                  .table-responsive
+                     table.table.table-hover.admin
+                        thead
+                           tr
+                              th 
+                              th ユーザーID
+                              th 区分
+                              th 会社コード
+                              th ユーザー名
+                              th 権限区分
+                              th ロック
+                              th 最終ログイン
+                        tbody
+                           tr
+                              td
+                                  img.img-circle.border(src='http://placehold.it/48x48', alt='admin-user')
+                              td 10001
+                              td 社内
+                              td 169
+                              td 
+                                 a(href='admin-detail.html') Ray Brown
+                              td 運営管理者
+                              td ロック
+                              td 2017/04/04 18:35
+                              td 
+                                 button.btn.btn-primary(type='button') 解除
+
+            .col-sm-12.text-center
+               ul.pagination
+                  li
+                     a(href='#') «
+                  li
+                     a(href='#') 1
+                  li
+                     a(href='#') 2
+                  li
+                     a(href='#') 3
+                  li
+                     a(href='#') 4
+                  li
+                     a(href='#') 5
+                  li
+                     a(href='#') »
+   // Main Content Ends 

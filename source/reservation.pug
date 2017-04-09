@@ -1,0 +1,118 @@
+include modules/head/head
+include modules/sidebar/sidebar
+include modules/header/header
+doctype html
+html
+   +head
+   body
+   +sidebar('reservation')
+   //Main Content Start 
+   section.content
+      +header
+      .wraper.container-fluid
+         .row
+            .col-sm-12
+               .panel.panel-default
+                  form.form-inline.top-form.reservation
+                     .form-group.feedback-left.search
+                        input.form-control(placeholder='予約ID, Tour No, ツアー名, 予約者名', type='text')
+                     .form-group.feedback-right.calendar
+                        input.form-control#daterange(type='text')(name='daterange')(value='')
+                     .form-group
+                        select.form-control.select2
+                           option 申込中
+                           option 申込中
+                           option 申込中
+                     .form-group
+                        select.form-control.select2
+                           option 移動手段
+                           option 移動手段
+                           option 移動手段
+                     .form-group
+                        select.form-control.select2
+                           option ガイド
+                           option ガイド
+                           option ガイド
+         .row
+            .col-sm-12
+               .panel.panel-default
+                  .table-responsive
+                     table.table.table-hover.reservation
+                        thead
+                           tr
+                              th 予約ID
+                              th 予約者名
+                              th ツアー名
+                              th 申込日
+                              th 出発日
+                              th 人数
+                              th 金額
+                              th ステータス
+                        tbody
+                           tr
+                              td 19411
+                              td 
+                                 a(href='reservation-detail.html')  ウラジミール・プーチン
+                              td Private Chartered Plan / Standard…
+                              td 2017/3/3
+                              td 2017/4/1
+                              td 1
+                              td ¥58,000
+                              td 申込中
+                           tr
+                              td 19411
+                              td 
+                                 a(href='reservation-detail.html')  ウラジミール・プーチン
+                              td Private Chartered Plan / Standard…
+                              td 2017/3/3
+                              td 2017/4/1
+                              td 1
+                              td ¥58,000
+                              td 申込中
+                           tr
+                              td 19411
+                              td 
+                                 a(href='reservation-detail.html')  ウラジミール・プーチン
+                              td Private Chartered Plan / Standard…
+                              td 2017/3/3
+                              td 2017/4/1
+                              td 1
+                              td ¥58,000
+                              td 申込中
+                           tr
+                              td 19411
+                              td 
+                                 a(href='reservation-detail.html')  ウラジミール・プーチン
+                              td Private Chartered Plan / Standard…
+                              td 2017/3/3
+                              td 2017/4/1
+                              td 1
+                              td ¥58,000
+                              td 申込中
+                           tr
+                              td 19411
+                              td 
+                                 a(href='reservation-detail.html')  ウラジミール・プーチン
+                              td Private Chartered Plan / Standard…
+                              td 2017/3/3
+                              td 2017/4/1
+                              td 1
+                              td ¥58,000
+                              td 申込中
+            .col-sm-12.text-center
+               ul.pagination
+                  li
+                     a(href='#') «
+                  li
+                     a(href='#') 1
+                  li
+                     a(href='#') 2
+                  li
+                     a(href='#') 3
+                  li
+                     a(href='#') 4
+                  li
+                     a(href='#') 5
+                  li
+                     a(href='#') »
+   // Main Content Ends 

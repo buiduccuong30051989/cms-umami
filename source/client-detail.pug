@@ -1,0 +1,146 @@
+include modules/head/head
+include modules/sidebar/sidebar
+include modules/header/header
+doctype html
+html
+   +head
+   body.bg-grey
+   +sidebar('client')
+   //Main Content Start 
+   section.content
+      +header
+      .wraper.container-fluid
+         .page-title
+            a(href='client.html')
+               h3 
+                  i.fa.fa-angle-left(aria-hidden='true')
+                  | 顧客一覧
+         ul.nav.nav-pills.tab-head
+            li.active
+               a(data-toggle='pill')(href='#client-information') 顧客情報
+            li
+               a(data-toggle='pill')(href='#client-history') 予約履歴
+         .tab-content
+            #client-information.tab-pane.fade.in.active
+               .panel.panel-default
+                  h3.sub-title 顧客情報
+                  dl.dl-horizontal.desc
+                     dt.text-right プロフィール写真
+                     dd.text-left 
+                        img(src='http://placehold.it/130x130', alt='client-thumbnail')
+                  .row
+                     .col-md-6
+                        dl.dl-horizontal.desc
+                           dt.text-right 氏名
+                           dd.text-left Ray, Brown
+                           dt.text-right Emailアドレス
+                           dd.text-left
+                              a(href="#") raybrown@gmail.com
+                           dt.text-right 通過
+                           dd.text-left USD
+                           dt.text-right 言語
+                           dd.text-left English
+                     .col-md-6
+                        dl.dl-horizontal.desc
+                           dt.text-right 居住国
+                           dd.text-left US
+                           dt.text-right 性別
+                           dd.text-left 男性
+                           dt.text-right 生年月日
+                           dd.text-left 1970/1/1 (age: 47)
+                           dt.text-right 緊急連絡先
+                           dd.text-left 03-1111-1111
+               .panel.panel-default
+                  h3.sub-title クレジットカード
+                  .client-credit-information
+                     p.client-credit-number
+                        i.fa.fa-cc-visa(aria-hidden='true')
+                        span &#11044;&#11044;&#11044;&#11044; 1234
+                     p.client-credit KAZUHISA TAKAHASHI
+                     p.client-credit-expires 03/2022
+                  hr
+               .panel.panel-default
+                  h3.sub-title ニュースレター購読
+                  .row.client-subscription
+                     .col-sm-2
+                        button.btn.btn-lg.btn-toggle(type='button', data-toggle='button', aria-pressed='false', autocomplete='off')
+                           .handle
+                     .col-sm-10
+                        p 購読ステータス（顧客からのリクエストに応じて変更）
+            #client-history.tab-pane.panel.panel-default.fade
+               h3 Menu 1
+               p
+                  | Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+               .row
+                  .col-sm-12
+                     .panel.panel-default
+                        .table-responsive
+                           table.table.table-hover.course
+                              thead
+                                 tr
+                                    th
+                                    th コースNO
+                                    th ツアー名
+                                    th 参加日
+                              tbody
+                                 tr
+                                    td 
+                                       img(src='http://placehold.it/65x50', alt='course-thumbnail')
+                                    td
+                                       | K1108
+                                    td 
+                                       a(href='client-detail-history.html') Private Chartered Plan / Standard Course: 10-Hour Sightseeing from Tokyo….
+                                    td
+                                       | 即予約OK
+                                 tr
+                                    td 
+                                       img(src='http://placehold.it/65x50', alt='course-thumbnail')
+                                    td
+                                       | K1108
+                                    td 
+                                       a(href='client-detail-history.html') Private Chartered Plan / Standard Course: 10-Hour Sightseeing from Tokyo….
+                                    td
+                                       | 即予約OK
+                                 tr
+                                    td 
+                                       img(src='http://placehold.it/65x50', alt='course-thumbnail')
+                                    td
+                                       | K1108
+                                    td 
+                                       a(href='client-detail-history.html') Private Chartered Plan / Standard Course: 10-Hour Sightseeing from Tokyo….
+                                    td
+                                       | 即予約OK
+                                 tr
+                                    td 
+                                       img(src='http://placehold.it/65x50', alt='course-thumbnail')
+                                    td
+                                       | K1108
+                                    td Private Chartered Plan / Standard Course: 10-Hour Sightseeing from Tokyo….
+                                    td
+                                       | 即予約OK
+                                 tr
+                                    td 
+                                       img(src='http://placehold.it/65x50', alt='course-thumbnail')
+                                    td
+                                       | K1108
+                                    td 
+                                       a(href='client-detail-history.html') Private Chartered Plan / Standard Course: 10-Hour Sightseeing from Tokyo….
+                                    td
+                                       | 即予約OK
+                  .col-sm-12.text-center
+                     ul.pagination
+                        li
+                           a(href='#') «
+                        li
+                           a(href='#') 1
+                        li
+                           a(href='#') 2
+                        li
+                           a(href='#') 3
+                        li
+                           a(href='#') 4
+                        li
+                           a(href='#') 5
+                        li
+                           a(href='#') »
+   // Main Content Ends 

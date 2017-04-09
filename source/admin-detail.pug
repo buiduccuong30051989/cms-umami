@@ -1,0 +1,91 @@
+include modules/head/head
+include modules/sidebar/sidebar
+include modules/header/header
+doctype html
+html
+   +head
+   body.bg-grey
+   +sidebar('admin')
+   //Main Content Start 
+   section.content
+      +header
+      .wraper.container-fluid
+         .page-title
+            a(href='admin.html')
+               h3 
+                  i.fa.fa-angle-left(aria-hidden='true')
+                  | ユーザー一覧
+         .panel.panel-default
+            h3.sub-title 基本情報
+            dl.dl-horizontal.desc
+               dt.text-right プロフィール写真
+               dd.text-left 
+                  img(src='http://placehold.it/130x130', alt='client-thumbnail')
+            .row
+               .col-md-6
+                  dl.dl-horizontal.desc
+                     dt.text-right 氏名
+                     dd.text-left Ray, Brown
+                     dt.text-right Emailアドレス
+                     dd.text-left
+                        input.form-control(value='raybrown@gmail.com')
+            .row
+               .col-md-6
+                  dl.dl-horizontal.desc.mgt-0
+                     dt.text-right ユーザーID
+                     dd.text-left 10001
+                     dt.text-right 区分
+                     dd.text-left 社外
+               .col-md-6
+                  dl.dl-horizontal.desc.mgt-0
+                     dt.text-right 会社コード
+                     dd.text-left 11111
+                     dt.text-right 権限区分
+                     dd.text-left 外部編集者
+         .panel.panel-default
+            h3.sub-title 外部編集者情報
+            dl.dl-horizontal.desc
+               dt.text-right 所属エージェンシー
+               dd.text-left 
+                  input.form-control(value='raybrown@gmail.com')
+               dt.text-right 翻訳可能言語
+               dd.text-left
+                  .checkbox.yokosho.inline
+                     label
+                        input(type='checkbox')(checked)
+                        i.fa
+                        | 英語
+                  .checkbox.yokosho.inline
+                     label
+                        input(type='checkbox')(checked)
+                        i.fa
+                        | 繁体字
+                  .checkbox.yokosho.inline
+                     label
+                        input(type='checkbox')(checked)
+                        i.fa
+                        | 繁体字I
+                  .checkbox.yokosho.inline
+                     label
+                        input(type='checkbox')(checked)
+                        i.fa
+                        | 簡体字
+                  .checkbox.yokosho.inline
+                     label
+                        input(type='checkbox')(checked)
+                        i.fa
+                        | ハングル
+                  .checkbox.yokosho.inline
+                     label
+                        input(type='checkbox')(checked)
+                        i.fa
+                        | タイ語
+         .panel.panel-default
+               h3.sub-title アカウントロック
+               dl.dl-horizontal.desc
+                  dt
+                     button.btn.btn-lg.btn-toggle(type='button', data-toggle='button', aria-pressed='false', autocomplete='off')
+                        .handle
+                  dd
+                     p スイッチを切り替えて解除
+   // Main Content Ends 

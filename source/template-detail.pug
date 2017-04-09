@@ -1,0 +1,14 @@
+include modules/head/head
+include modules/sidebar/sidebar
+include modules/header/header
+doctype html
+html
+   +head
+   body.welcome-page
+   +sidebar('fixed-phrase')
+   //Main Content Start 
+   section.content
+      +header
+      .wraper.container-fluid
+         h1 TEMPLATE DETAILS
+   // Main Content Ends 

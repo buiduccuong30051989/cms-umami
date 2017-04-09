@@ -14,7 +14,8 @@ $breakpoints: (
         'small-tablet':  ( max-width:  767px ),
         'medium-tablet': ( max-width:  991px ),
         'desktop':  ( max-width: 1199px ),
-        'desktop-up':  ( min-width: 1200px )
+        'desktop-large':  ( max-width: 1599px ),
+        'desktop-up':  ( min-width: 1600px )
 ) !default;
 
 /// Mixin to manage responsive breakpoints

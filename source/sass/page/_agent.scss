@@ -1,0 +1,24 @@
+/*----------  Agent  ----------*/
+   dl.dl-horizontal.desc.billing-preferences{
+      .checkbox.yokosho,.form-group{
+         margin:0;
+      }
+      .form-group{
+         max-width: 385px;
+      }
+   }
+   table.table.no-border.agent-sales-setting{
+      max-width: 560px;
+      tbody tr td:first-child{
+         width:410px;
+         padding-left: 15px;
+      }
+   }
+   
+   .group-btn-footer.agent{
+      button{
+         min-width: 253px;
+         margin:15px;
+         padding: 14px 16px;
+      }
+   }

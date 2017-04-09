@@ -1,0 +1,25 @@
+include modules/head/head
+include modules/sidebar/sidebar
+include modules/header/header
+doctype html
+html
+   +head
+   body.bg-grey
+   +sidebar('reservation')
+   //Main Content Start 
+   section.content
+      +header
+      .wraper.container-fluid
+         .page-title
+            a(href='client-detail.html')
+               h3 
+                  i.fa.fa-angle-left(aria-hidden='true')
+                  | 予約一覧
+         .row
+            .panel.panel-default
+               h2 Private Chartered Plan / Standard Course: 10-Hour Sightseeing from Tokyo. Pick-andeat Fresh Cherry! The 5th Station of Mt. Fuji (Mount Fuji), the World Heritage Site! Mt.Kachi Kachi Ropeway!
+               p.status ステータス: 催行決定
+               .alert.alert-warning(role='alert') 
+                  i.fa.fa-exclamation-triangle(aria-hidden='true')
+                  | Cancellation fees will be charged after Mar 20, 2017
+   // Main Content Ends 

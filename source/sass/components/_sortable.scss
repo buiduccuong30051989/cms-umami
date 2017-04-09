@@ -1,0 +1,32 @@
+/*----------  Sortable  ----------*/
+   body.dragging, body.dragging * {
+     cursor: move !important;
+   }
+   .dragged {
+     position: absolute;
+     opacity: 0.5;
+     z-index: 2000;
+   }
+
+   tr.placeholder {
+     position: relative;
+     width: 100%;
+   }
+   tr.dragged {
+     
+   }
+   tr.placeholder:before {
+      content: "\f105";
+      left: -8px;
+      top: 8px;
+      color:red;
+      font-family: 'FontAwesome';
+      position: absolute;
+   }
+   table.sorted_table{
+      i{
+         float:right;
+         cursor: pointer;
+         font-size:24px;
+      }
+   }  

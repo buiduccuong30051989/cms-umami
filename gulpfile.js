@@ -103,7 +103,8 @@ var js = {
     './node_modules/daterangepicker/daterangepicker.js',
     './node_modules/jquery.nicescroll/jquery.nicescroll.min.js',
     './node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js',
-    './node_modules/select2/dist/js/select2.full.min.js'
+    './node_modules/select2/dist/js/select2.full.min.js',
+    './node_modules/jquery-sortable/source/js/jquery-sortable.js'
   ],
   out: dest + 'js/'
 };

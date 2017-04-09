@@ -1,0 +1,83 @@
+include modules/head/head
+include modules/sidebar/sidebar
+include modules/header/header
+doctype html
+html
+   +head
+   body.bg-grey
+   +sidebar('agent')
+   //Main Content Start 
+   section.content
+      +header
+      .wraper.container-fluid
+         .page-title
+            h3.title エージェントグループ一覧
+         .row
+            .col-sm-12
+               .panel.panel-default
+                  form.form-inline.top-form.search-agent
+                     .form-group.feedback-left.search
+                        input.form-control(placeholder='Agent ID, Agent name, Email address.', type='text')
+                     .form-group
+                        select.form-control.select2
+                           option 請求タイプ
+                           option 請求タイプ
+                           option 請求タイプ
+                     .form-group
+                        select.form-control.select2
+                           option 支払いサイト
+                           option 支払いサイト
+                           option 支払いサイト
+                     .form-group
+                        select.form-control.select2
+                           option 販売カテゴリ
+                           option 販売カテゴリ
+                           option 販売カテゴリ
+                     .form-group
+                        select.form-control.select2
+                           option 登録状況
+                           option 登録状況
+                           option 登録状況
+            .col-sm-12
+               .panel.panel-default
+                  .table-responsive
+                     table.table.table-hover.agent
+                        thead
+                           tr
+                              th Agent ID
+                              th Agent Name
+                              th 請求タイプ
+                              th 支払サイト
+                              th 登録状況
+                        tbody
+                           tr
+                              td 10001
+                              td 
+                                 a(href='agent-detail.html') 訪日旅行社
+                              td クレジットカード
+                              td 即時
+                              td 登録済み
+                           tr
+                              td 10001
+                              td 
+                                 a(href='agent-detail.html') 訪日旅行社
+                              td クレジットカード
+                              td 即時
+                              td 登録済み
+            .col-sm-12.text-center
+               ul.pagination
+                  li
+                     a(href='#') «
+                  li
+                     a(href='#') 1
+                  li
+                     a(href='#') 2
+                  li
+                     a(href='#') 3
+                  li
+                     a(href='#') 4
+                  li
+                     a(href='#') 5
+                  li
+                     a(href='#') »
+   // Main Content Ends 

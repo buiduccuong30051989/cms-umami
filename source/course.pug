@@ -1,0 +1,99 @@
+include modules/head/head
+include modules/sidebar/sidebar
+include modules/header/header
+doctype html
+html
+   +head
+   body
+   +sidebar('course')
+   //Main Content Start 
+   section.content
+      +header
+      .wraper.container-fluid
+         .row
+            .col-sm-12
+               .panel.panel-default
+                  form.form-inline.top-form.course
+                     .form-group.feedback-left.search
+                        input.form-control(placeholder='Tour No. Tour name, Keywords', type='text')
+                     .form-group
+                        select.form-control.select2
+                           option 即予約OK
+                           option 即予約OK
+                           option 即予約OK
+                     .form-group.feedback-right.calendar
+                        input.form-control#daterange-multi(type='text')(name='daterange')(value='')
+         .row
+            .col-sm-12
+               .panel.panel-default
+                  .table-responsive
+                     table.table.table-hover.course
+                        thead
+                           tr
+                              th(width="100px")
+                              th(width="100px") コースNO
+                              th ツアー名
+                              th(width="150px") 催行ステータス
+                        tbody
+                           tr
+                              td 
+                                 img(src='http://placehold.it/65x50', alt='course-thumbnail')
+                              td
+                                 | K1108
+                              td.nowarp 
+                                 a(href='course-detail.html') Private Chartered Plan / Standard Course: 10-Hour Sightseeing from Tokyo Private Chartered Plan / Standard Course: 10-Hour Sightseeing from Tokyo Private Chartered Plan / Standard Course: 10-Hour Sightseeing from Tokyo
+                              td
+                                 | 即予約OK
+                           tr
+                              td 
+                                 img(src='http://placehold.it/65x50', alt='course-thumbnail')
+                              td
+                                 | K1108
+                              td.nowarp 
+                                 a(href='course-detail.html') Private Chartered Plan / Standard Course: 10-Hour Sightseeing from Tokyo Private Chartered Plan / Standard Course: 10-Hour Sightseeing from Tokyo Private Chartered Plan / Standard Course: 10-Hour Sightseeing from Tokyo
+                              td
+                                 | 即予約OK
+                           tr
+                              td 
+                                 img(src='http://placehold.it/65x50', alt='course-thumbnail')
+                              td
+                                 | K1108
+                              td.nowarp 
+                                 a(href='course-detail.html') Private Chartered Plan / Standard Course: 10-Hour Sightseeing from Tokyo Private Chartered Plan / Standard Course: 10-Hour Sightseeing from Tokyo Private Chartered Plan / Standard Course: 10-Hour Sightseeing from Tokyo
+                              td
+                                 | 即予約OK
+                           tr
+                              td 
+                                 img(src='http://placehold.it/65x50', alt='course-thumbnail')
+                              td
+                                 | K1108
+                              td.nowarp 
+                                 a(href='course-detail.html') Private Chartered Plan / Standard Course: 10-Hour Sightseeing from Tokyo Private Chartered Plan / Standard Course: 10-Hour Sightseeing from Tokyo Private Chartered Plan / Standard Course: 10-Hour Sightseeing from Tokyo
+                              td
+                                 | 即予約OK
+                           tr
+                              td 
+                                 img(src='http://placehold.it/65x50', alt='course-thumbnail')
+                              td
+                                 | K1108
+                              td.nowarp 
+                                 a(href='course-detail.html') Private Chartered Plan / Standard Course: 10-Hour Sightseeing from Tokyo Private Chartered Plan / Standard Course: 10-Hour Sightseeing from Tokyo Private Chartered Plan / Standard Course: 10-Hour Sightseeing from Tokyo
+                              td
+                                 | 即予約OK
+            .col-sm-12.text-center
+               ul.pagination
+                  li
+                     a(href='#') «
+                  li
+                     a(href='#') 1
+                  li
+                     a(href='#') 2
+                  li
+                     a(href='#') 3
+                  li
+                     a(href='#') 4
+                  li
+                     a(href='#') 5
+                  li
+                     a(href='#') »
+   // Main Content Ends 

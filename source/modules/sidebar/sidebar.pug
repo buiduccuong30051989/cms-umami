@@ -1,4 +1,4 @@
-mixin sidebar
+mixin sidebar(page)
    // Aside Start
    aside.left-panel
       // brand
@@ -9,149 +9,76 @@ mixin sidebar
       // Navbar Start
       nav.navigation
          ul.list-unstyled
-            li.has-submenu
-               a(href='#')
-                  i.ion-home
-                  span.nav-label Dashboard
-               ul.list-unstyled
-                  li
-                     a(href='index.html') Dashboard v1
-                  li
-                     a(href='dashboard2.html') Dashboard v2
-            li.has-submenu
-               a(href='#')
-                  i.ion-flask
-                  span.nav-label UI Elements
-               ul.list-unstyled
-                  li
-                     a(href='typography.html') Typography
-                  li
-                     a(href='buttons.html') Buttons
-                  li
-                     a(href='icons.html') Icons
-                  li
-                     a(href='panels.html') Panels
-                  li
-                     a(href='tabs-accordions.html') Tabs & Accordions
-                  li
-                     a(href='modals.html') Modals
-                  li
-                     a(href='bootstrap-ui.html') BS Elements
-                  li
-                     a(href='progressbars.html') Progress Bars
-                  li
-                     a(href='notification.html') Notification
-                  li
-                     a(href='sweet-alert.html') Sweet-Alert
-            li.has-submenu
-               a(href='#')
-                  i.ion-settings
-                  span.nav-label Components
-               ul.list-unstyled
-                  li
-                     a(href='grid.html') Grid
-                  li
-                     a(href='portlets.html') Portlets
-                  li
-                     a(href='widgets.html') Widgets
-                  li
-                     a(href='nestable-list.html') Nesteble
-                  li
-                     a(href='calendar.html') Calendar
-            li.has-submenu
-               a(href='#')
-                  i.ion-compose
-                  span.nav-label Forms
-               ul.list-unstyled
-                  li
-                     a(href='form-elements.html') General Elements
-                  li
-                     a(href='form-validation.html') Form Validation
-                  li
-                     a(href='form-advanced.html') Advanced Form
-                  li
-                     a(href='form-wizard.html') Form Wizard
-                  li
-                     a(href='form-editor.html') WYSIWYG Editor
-                  li
-                     a(href='code-editor.html') Code Editors
-                  li
-                     a(href='form-uploads.html') Multiple File Upload
-                  li
-                     a(href='image-crop.html') Image Crop
-            li.has-submenu
-               a(href='#')
-                  i.ion-grid
-                  span.nav-label Data Tables
-               ul.list-unstyled
-                  li
-                     a(href='tables.html') Basic Tables
-                  li
-                     a(href='table-datatable.html') Data Table
-            li.has-submenu
-               a(href='#')
-                  i.ion-stats-bars
-                  span.nav-label Charts
-               ul.list-unstyled
-                  li
-                     a(href='morris-chart.html') Morris Chart
-                  li
-                     a(href='chartjs.html') Chartjs
-                  li
-                     a(href='flot-chart.html') Flot Chart
-                  li
-                     a(href='rickshaw-chart.html') Rickshaw Chart
-                  li
-                     a(href='c3-chart.html') C3 Chart
-                  li
-                     a(href='other-chart.html') Other Chart
-            li.has-submenu
-               a(href='#')
-                  i.ion-email
-                  span.nav-label Mail
-               ul.list-unstyled
-                  li
-                     a(href='inbox.html') Inbox
-                  li
-                     a(href='email-compose.html') Compose Mail
-                  li
-                     a(href='email-read.html') View Mail
-            li.has-submenu
-               a(href='#')
-                  i.ion-location
-                  span.nav-label Maps
-               ul.list-unstyled
-                  li
-                     a(href='gmap.html')  Google Map
-                  li
-                     a(href='vector-map.html')  Vector Map
-            li.has-submenu
-               a(href='#')
-                  i.ion-document
-                  span.nav-label Pages
-               ul.list-unstyled
-                  li
-                     a(href='profile.html') Profile
-                  li
-                     a(href='timeline.html') Timeline
-                  li
-                     a(href='invoice.html') Invoice
-                  li
-                     a(href='contact.html') Contact-list
-                  li
-                     a(href='login.html') Login
-                  li
-                     a(href='register.html') Register
-                  li
-                     a(href='recoverpw.html') Recover Password
-                  li
-                     a(href='lock-screen.html') Lock Screen
-                  li.active
-                     a(href='blank.html') Blank Page
-                  li
-                     a(href='404.html') 404 Error
-                  li
-                     a(href='404_alt.html') 404 alt
-                  li
-                     a(href='500.html') 500 Error
+            if page == 'course'
+               li.has-submenu.active
+                  a(href='course.html')(title='Course')
+                     span.nav-label コース
+            else
+               li.has-submenu
+                  a(href='course.html')(title='Course')
+                     span.nav-label コース
+            if page == 'reservation'
+               li.has-submenu.active
+                  a(href='reservation.html')(title='Reservation')
+                     span.nav-label 予約
+            else
+               li.has-submenu
+                  a(href='reservation.html')(title='Reservation')
+                     span.nav-label 予約
+            if page == 'client'
+               li.has-submenu.active
+                  a(href='client.html')(title='Client')
+                     span.nav-label 顧客
+            else
+               li.has-submenu
+                  a(href='client.html')(title='Client')
+                     span.nav-label 顧客
+            if page == 'coupon'
+               li.has-submenu.active
+                  a(href='coupon.html')(title='Coupon')
+                     span.nav-label クーポン
+            else
+               li.has-submenu
+                  a(href='coupon.html')(title='Coupon')
+                     span.nav-label クーポン
+            if page == 'translation'
+               li.has-submenu.active
+                  a(href='translation.html')(title='Translation')
+                     span.nav-label 翻訳
+            else
+               li.has-submenu
+                  a(href='translation.html')(title='Translation')
+                     span.nav-label 翻訳
+            if page == 'email'
+               li.has-submenu.active
+                  a(href='email.html')(title='Email')
+                     span.nav-label メール
+            else
+               li.has-submenu
+                  a(href='email.html')(title='Email')
+                     span.nav-label メール
+            if page == 'fixed-phrase'
+               li.has-submenu.active
+                  a(href='fixed-phrase.html')(title='Fixed Phrase')
+                     span.nav-label 定型文
+            else
+               li.has-submenu
+                  a(href='fixed-phrase.html')(title='Fixed Phrase')
+                     span.nav-label 定型文
+            if page == 'admin'
+               li.has-submenu.active
+                  a(href='admin.html')(title='Admin User')
+                     span.nav-label 管理ユーザー
+            else
+               li.has-submenu
+                  a(href='admin.html')(title='Admin User')
+                     span.nav-label 管理ユーザー
+            if page == 'agent'
+               li.has-submenu.active
+                  a(href='agent.html')(title='Agent Management')
+                     span.nav-label エージェント管理
+            else
+               li.has-submenu
+                  a(href='agent.html')(title='Agent Management')
+                     span.nav-label エージェント管理
    // Aside Ends

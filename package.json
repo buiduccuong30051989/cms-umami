@@ -37,6 +37,7 @@
     "htmlhint-stylish": "^1.0.3",
     "install": "^0.8.1",
     "jquery": "2.2.1",
+    "jquery-sortable": "^0.9.13",
     "jquery.nicescroll": "^3.6.8",
     "jshint": "^2.9.2",
     "npm": "^3.10.6",

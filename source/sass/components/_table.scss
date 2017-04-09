@@ -1,0 +1,37 @@
+/*----------  Table  ----------*/
+   
+   table.table{
+      tr>th{
+         font-weight: normal;
+         font-size: 16px;
+         border-bottom-width: 1px;
+      }
+      & > thead > tr > th, & > thead > tr > td, & > tbody > tr > th, & > tbody > tr > td, & > tfoot > tr > th, & > tfoot > tr > td{
+         vertical-align: middle!important;
+      }
+   }
+   table.table.agent{
+      min-width: 480px;
+   }
+   table.agent{
+      .agent-id{
+         width: 100px;
+      }
+   }
+   table.no-border{
+      tr,th,td{
+         border:0!important;
+      }
+   }
+   table.admin{
+      .btn{
+         min-width: 124px;
+      }
+   }
+   table.agent-sales-setting{
+      
+   }
+   table.table.table-hover.course{
+      table-layout: fixed;
+      min-width: 992px;
+   }
