@@ -79,7 +79,8 @@ var scss = {
       './node_modules/bootstrap-sass/assets/stylesheets',
       './node_modules/font-awesome/scss/',
       './node_modules/daterangepicker',
-      './node_modules/select2/dist/css'
+      './node_modules/select2/dist/css',
+      './node_modules/bootstrap-tagsinput/dist'
     ]
   }
 };
@@ -104,7 +105,8 @@ var js = {
     './node_modules/jquery.nicescroll/jquery.nicescroll.min.js',
     './node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js',
     './node_modules/select2/dist/js/select2.full.min.js',
-    './node_modules/jquery-sortable/source/js/jquery-sortable.js'
+    './node_modules/jquery-sortable/source/js/jquery-sortable.js',
+    './node_modules/bootstrap-tagsinput/dist/bootstrap-tagsinput.js'
   ],
   out: dest + 'js/'
 };

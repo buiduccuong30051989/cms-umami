@@ -72,11 +72,59 @@ $(document).ready(function() {
       handle: 'i.fa-bars',
    });
 
-   $('#js-add-sales-setting').on('click',function(e){
-        var clone = $('#js-agent-sales-setting tbody tr:first').clone();
-        $(clone).insertBefore( $(this).parent().parent().parent());
+   $('.js-course-add-sales-setting').on('click',function(e){
+        var template = '';
+        template+='<tr>'
+        template+='<td><select class="form-control select2"><option>バスツアー</option><option>バスツアー</option><option>バスツアー</option></select></td>'
+        template+='<td><div class="form-group"><input class="form-control sm inline" type="text"><span>%</span>'                
+        template+='<a class="btn-trash js-btn-remove-agent-setting" href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>'                 
+        template+='</div></td></tr>'
+        $(template).insertBefore( $(this).closest('tr'));
+        $(".select2").select2({
+          theme: 'theme',
+       });
         e.preventDefault();
     });
+
+    $(document).on('click', '.js-btn-remove-agent-setting', function(e) {
+      var parent = $(this).closest('tbody');
+      console.log(parent.children().length);
+      if(parent.children().length > 2){
+        $(this).closest('tr').remove();
+        e.preventDefault();
+      }
+      else{
+        return false;
+      }
+    });
+
+     $('.js-course-add-area').on('click',function(e){
+        var template = '';
+        template+='<tr><td class="text-right">都道府県</td>'
+        template+='<td><select class="form-control select2"><option>バスツアー</option><option>バスツアー</option><option>バスツアー</option></select></td>'
+        template+='<td><div class="form-group"><input class="form-control sm inline" type="text"><span>%</span>'                
+        template+='<a class="btn-trash js-btn-remove-agent-setting" href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>'                 
+        template+='</div></td></tr>'
+        $(template).insertBefore( $(this).closest('tr'));
+        $(".select2").select2({
+          theme: 'theme',
+       });
+        e.preventDefault();
+    });
+
+    $(document).on('click', '.js-course-remove-area', function(e) {
+      var parent = $(this).closest('tbody');
+      console.log(parent.children().length);
+      if(parent.children().length > 2){
+        $(this).closest('tr').remove();
+        e.preventDefault();
+      }
+      else{
+        return false;
+      }
+    });
+
+    $("input.js-input-tags").tagsinput('items')
 
 });
 

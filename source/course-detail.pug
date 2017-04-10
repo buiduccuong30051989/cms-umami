@@ -4,11 +4,242 @@ include modules/header/header
 doctype html
 html
    +head
-   body.welcome-page
+   body.bg-grey
    +sidebar('course')
    //Main Content Start 
    section.content
       +header
       .wraper.container-fluid
-         h1 Course Detail
+         ul.nav.nav-pills.tab-head
+            li.active
+               a(data-toggle='pill')(href='#course-information') コース情報
+            li
+               a(data-toggle='pill')(href='#course-rate-plan') 料金プラン
+            li
+               a(data-toggle='pill')(href='#course-operation-status') 催行ステータス
+            li
+               a(data-toggle='pill')(href='#course-imagine') 画像
+            li
+               a(data-toggle='pill')(href='#course-video') 動画
+         .tab-content
+            .page-title
+               a(href='course.html')
+                  h3 
+                     i.fa.fa-angle-left(aria-hidden='true')
+                     | コース詳細
+            #course-information.tab-pane.fade.in.active
+               .panel.panel-default
+                  h3.sub-title コース
+                  dl.dl-horizontal.desc
+                     dt.text-right 販売カテゴリ
+                     dd.text-left
+                        .form-group
+                           select.form-control.select2
+                              option バスツアー
+                              option バスツアー
+                              option バスツアー
+                     dt.text-right コースNO
+                     dd.text-left 
+                        .form-group
+                           input.form-control(value='K1101')
+                     dt.text-right コース名
+                     dd.text-left
+                        .form-group
+                           input.form-control(value='[Departure guaranteed] TOKYO 1Day Tour ～Sightseeing and Seafood Lunch in Tokyo～')
+                  .row
+                     .col-md-4
+                        dl.dl-horizontal.desc         
+                           dt.text-right 交通手段
+                           dd.text-left
+                              .form-group
+                                 select.form-control.select2
+                                    option 列車
+                                    option 列車
+                                    option 列車
+                     .col-md-4
+                        dl.dl-horizontal.desc         
+                           dt.text-right 募集形態
+                           dd.text-left
+                              .form-group
+                                 select.form-control.select2
+                                    option 宿泊あり
+                                    option 宿泊あり
+                                    option 宿泊あり
+                     .col-md-4
+                        dl.dl-horizontal.desc         
+                           dt.text-right 旅行タイプ
+                           dd.text-left
+                              .form-group
+                                 select.form-control.select2
+                                    option 宿泊旅行
+                                    option 宿泊旅行
+                                    option 宿泊旅行
+                  dl.dl-horizontal.desc  
+                     dt.text-right 方面
+                     dd.text-left
+                        .form-group
+                           select.form-control.select2
+                              option 関東甲信越
+                              option 関東甲信越
+                              option 関東甲信越
+                     dt.text-right 説明
+                     dd.text-left 
+                        .form-group
+                           textarea.form-control.min-h-135
+                              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+               .panel.panel-default
+                  h3.sub-title 詳細
+                  dl.dl-horizontal.desc
+                     dt.text-right 基本募集人数
+                     dd.text-left
+                        input.form-control(value='2')
+                  .row
+                     .col-md-4
+                        .checkbox.yokosho.right
+                           label
+                              span 添乗員
+                              input(type='checkbox')
+                              i.fa
+                     .col-md-4
+                        .checkbox.yokosho.right
+                           label
+                              span 相部屋受付可能
+                              input(type='checkbox')
+                              i.fa
+                     .col-md-4
+                        .checkbox.yokosho.right
+                           label
+                              span 一人受付可能
+                              input(type='checkbox')
+                              i.fa
+                  dl.dl-horizontal.desc
+                     dt.text-right 参加条件
+                     dd.text-left 
+                        .form-group
+                           select.form-control.select2
+                              option 特になし
+                              option 特になし
+                              option 特になし
+                     dt.text-right 取消料パターン
+                     dd.text-left 
+                        .form-group
+                           select.form-control.select2
+                              option 国内(宿泊旅行)
+                              option 国内(宿泊旅行)
+                              option 国内(宿泊旅行)
+               .panel.panel-default
+                  h3.sub-title エリア
+                  .row
+                     .table-responsive
+                        table.table.no-border.area-course
+                           tbody
+                              tr
+                                 td.text-right 都道府県
+                                 td
+                                    select.form-control.select2
+                                       option バスツアー
+                                       option バスツアー
+                                       option バスツアー
+                                 td
+                                    .form-group
+                                       input.form-control.sm.inline(type='text')
+                                       span %
+                                       a.btn-trash.js-course-remove-area(href='#')
+                                          i.fa.fa-trash(aria-hidden='true')
+                              tr
+                                 td.text-right 都道府県
+                                 td
+                                    select.form-control.select2
+                                       option バスツアー
+                                       option バスツアー
+                                       option バスツアー
+                                 td
+                                    .form-group
+                                       input.form-control.sm.inline(type='text')
+                                       span %
+                                       a.btn-trash.js-course-remove-area(href='#')
+                                          i.fa.fa-trash(aria-hidden='true')
+                              tr.add-control
+                                 td
+                                 td 
+                                 td
+                                    .form-group
+                                       a.btn-trash.pull-right.js-course-add-area(href='#')
+                                          i.fa.fa-plus(aria-hidden='true')   
+               .panel.panel-default
+                  h3.sub-title 旅程
+                  dl.dl-horizontal.desc
+                     dt.text-right 1日目
+                     dd
+                        .box-course-itinerary
+                           textarea.form-control.min-h-135
+                              | Hotel Gracery ShinjukubusShinjuku Washington Hotel (Meet 9:00) 
+                              | *Departures between Mar. 27th~Apr. 5th are 30 minutes early 
+                              | meeting time; Shinjuku Washington Hotel (Meet 8:30)busThe 
+                              | Imperial Palace (Stroll / 50min.)busAsakusa (Stroll / 60 min.)
+                              | busTsukiji (Stroll and Lunch / Total 90 min.)busHinode Pier ship
+                              | <Tokyo Bay Mini-cruise>shipOdaiba Marine ParkwalkOdaiba (Stroll 
+                              | / 60 min.)busArrival at ~Maihama, Ginza, Tokyo Tower,Shibuya, 
+                              | Harajuku, Shinjuku station West exit~ (Scheduled 15:30~17:30)
+                           .form-group
+                              .checkbox.yokosho.right.sm
+                                 label
+                                    span 朝食
+                                    input(type='checkbox')
+                                    i.fa
+                           .form-group
+                              .checkbox.yokosho.right.sm
+                                 label
+                                    span 昼食
+                                    input(type='checkbox')
+                                    i.fa
+                           .form-group
+                              .checkbox.yokosho.right.sm
+                                 label
+                                    span 夕食
+                                    input(type='checkbox')
+                                    i.fa
+                           .form-group
+                              .checkbox.yokosho.right.sm
+                                 label
+                                    span update
+                                    input(type='checkbox')
+                                    i.fa
+                           .form-group
+                              .checkbox.yokosho.right.sm
+                                 label
+                                    span update
+                                    input(type='checkbox')
+                                    i.fa
+                           dl.dl-horizontal.desc
+                              dt.text-right ホテル名
+                              dd
+                                 input.form-control(value='新宿ワシントンホテル')
+                              dt.text-right URL
+                              dd
+                                 input.form-control(value='https://washington-hotel.com')
+               .panel.panel-default
+                  h3.sub-title 注意事項
+                  .table-responsive
+                     .table-responsive
+                        table.table.table-hover.border-bottom-only
+                           tbody
+                              tr
+                                 td 1
+                                 td 定型文1
+                              tr
+                                 td 2
+                                 td 定型文2
+               .panel.panel-default
+                  h3.sub-title Update
+                  .form-group
+                     input.js-input-tags.form-control.tags(type='text', value='Amsterdam,Washington,Sydney,Beijing,Cairo', data-role='tagsinput')
+            #course-rate-plan.tab-pane.fade
+               h3 Coming Soon
+            #course-operation-status.tab-pane.fade
+               h3 Coming Soon
+            #course-imagine.tab-pane.fade
+               h3 Coming Soon
+            #course-video.tab-pane.fade
+               h3 Coming Soon
    // Main Content Ends 

@@ -1,6 +1,11 @@
 /*============================
 =            Form            =
 ============================*/
+   textarea.form-control{
+      width:100%;
+      height:auto;
+      white-space: normal;
+   }
    .formgroup{
 
    }
@@ -149,7 +154,6 @@
          float:left;
       }
 
-
    /*----------  Form Search Agent  ----------*/
       form.top-form.search-agent{
          display: table;
@@ -178,6 +182,8 @@
       form.top-form.course{
          display: table;
          width: 100%;
+         padding-right: 134px;
+         position: relative;
          .form-group{
             float:left;
             width:33.33333%;
@@ -189,11 +195,48 @@
                padding-right: 0;
             }
          }
+         button{
+            min-width: 124px;
+            right:0;
+            position: absolute;
+         }
          @include respond-to('small-tablet') {
+            padding-right: 0;
             .form-group{
                width:100%;
                margin-bottom: 5px;
                padding:0;
+            }
+            button{
+               position: static;
+               width: 100%;
+            }
+         }
+      }
+      .area-course{
+         .form-group{
+            line-height: 34px;
+            margin:0;
+            width:140px;
+            input{
+               margin-right: 15px;
+            }
+            span{
+               margin-right: 15px;
+            }
+            a.btn-trash{
+               display: inline-block;
+               width:34px;
+               height: 34px;
+               background: #D8D8D8;
+               color:#666;
+               text-align: center;
+               line-height: inherit;
+               border-radius: 4px;
+               float:right;
+               i{
+                  font-size: 18px;
+               }
             }
          }
       }
@@ -470,44 +513,70 @@
          }
       }
 
-   /* Checkbox */
    
-   .checkbox.yokosho{
-      position: relative;
-      display: block;
-      label{
-         cursor: pointer;
-         padding-left: 30px;
-         line-height: 25px;
-         user-select: none;
-      }
-      i {
-         display: inline-block;
-         cursor: pointer;
-         vertical-align: middle;
-         font-family: 'FontAwesome';
-         font-size: 25px;
-         position: absolute;
-         left:0;
-         &:before{
-            content: "\f096";
-            color:#ccc;
+   /*----------  Checkbox  ----------*/
+     
+      .checkbox.yokosho{
+         position: relative;
+         display: block;
+         label{
+            cursor: pointer;
+            padding-left: 30px;
+            line-height: 25px;
+            user-select: none;
+         }
+         i {
+            display: inline-block;
+            cursor: pointer;
+            vertical-align: middle;
+            font-family: 'FontAwesome';
+            font-size: 25px;
+            position: absolute;
+            left:0;
+            &:before{
+               content: "\f096";
+               color:#ccc;
+            }
+         }
+         input{
+            visibility: hidden;
+            display: none;
+            &:checked + i:before {
+               content: "\f046";
+               color:#7BAEE8;
+            }
+         }
+         &.inline{
+            display: inline-block;
+            margin-right: 15px;
          }
       }
-      input{
-         visibility: hidden;
-         display: none;
-         &:checked + i:before {
-            content: "\f046";
-            color:#7BAEE8;
+      .checkbox.yokosho.right{
+         margin-left: 230px;
+         span{
+            position: absolute;
+            right:100%;
+            width:230px;
+            padding-right: 70px;
+            text-align: right
+         }
+         &.sm{
+            margin-left: 0;
+            label{
+               padding-left: 0;
+            }
+            span{
+               position: static;
+               right:100%;
+               width:180px;
+               padding-right: 15px;
+               text-align: left;
+            }
+            i{
+               position: static;
+            }
          }
       }
-      &.inline{
-         display: inline-block;
-         margin-right: 15px;
-      }
-   }
-
    /*---------- Agent Detail  ----------*/
       .agent-sales-setting{
          .form-group{
@@ -529,11 +598,17 @@
                text-align: center;
                line-height: inherit;
                border-radius: 4px;
+               float:right;
                i{
                   font-size: 18px;
                }
             }
          }
+      }
+   /*----------  Bootstrap Tags Input  ----------*/
+      .bootstrap-tagsinput{
+         width:100%;
+         min-height: 100px;
       }
 
 /*=====  End of Form  ======*/

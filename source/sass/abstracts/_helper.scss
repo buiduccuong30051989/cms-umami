@@ -24,7 +24,9 @@
    .min-w-150{
       min-width: 150px;
    }
-
+   .min-h-135{
+      min-height: 135px;
+   }
 /*----------  Max with  ----------*/
    .max-w-1200{
       width:100%;
@@ -49,6 +51,9 @@
       border:2px solid #255994;
    }
 /*----------  Margin  ----------*/
+   .mg-0{
+      margin:0!important;
+   }
    .mgt-0{
       margin-top:0;
    }

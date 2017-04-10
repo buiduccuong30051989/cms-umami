@@ -5,3 +5,4 @@
 //=require select2/dist/js/select2.full.min.js
 //=require jquery.nicescroll/jquery.nicescroll.min.js
 //=require jquery-sortable/source/js/jquery-sortable.js
+//=require bootstrap-tagsinput/dist/bootstrap-tagsinput.js

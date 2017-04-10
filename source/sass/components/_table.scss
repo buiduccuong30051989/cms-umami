@@ -35,3 +35,11 @@
       table-layout: fixed;
       min-width: 992px;
    }
+   table.table-hover.border-bottom-only{
+      tbody{
+         td{
+            border-top:0;
+            border-bottom: 1px solid #ccc;
+         }
+      }
+   }
